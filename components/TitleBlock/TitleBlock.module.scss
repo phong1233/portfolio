@@ -1,0 +1,55 @@
+@use '../../styles/variables.scss' as *;
+
+.container {
+  width: 100%;
+}
+
+.titleContainer {
+  width: 100%;
+  height: 20vw;
+  background-color: $divider-1;
+  color: $text-primary;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+
+  .title {
+    align-items: center;
+    font-size: 6vw;
+    font-weight: bolder;
+  }
+
+  .subtitle {
+    font-size: 3vw;
+  }
+}
+
+
+.divider1 {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+
+  svg {
+    position: relative;
+    display: block;
+    width: calc(208% + 1.3px);
+    height: 150px;
+  }
+
+  .fill {
+    fill: $divider-1;
+  }
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .divider1 svg {
+      width: calc(100% + 1.3px);
+      height: 54px;
+  }
+}

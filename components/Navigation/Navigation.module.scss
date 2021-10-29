@@ -1,0 +1,51 @@
+@use '../../styles/variables.scss' as *;
+
+.container {
+  position: fixed;
+  z-index: 3;
+  left: 0px;
+  top: 10%;
+  width: 15vw;
+  color: white;
+  opacity: 0.30;
+
+  &:hover {
+    opacity: 0.75;
+  }
+  transition-timing-function: ease;
+}
+
+@mixin section {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 3vw;
+  padding-left: 10px;
+  transition-timing-function: ease;
+  transition-delay: 0.1s;
+
+  &:hover {
+      cursor: pointer;
+  }
+  .textBox {
+    padding-left: 10px;
+    font-weight: bolder;
+    font-size: 1.5vh;
+    text-shadow: -1px -1px 0 $layer-0, 1px -1px 0 $layer-0, -1px 1px 0 $layer-0, 1px 1px 0 $layer-0;
+  }
+}
+
+.section {
+  @include section;
+}
+
+.sectionSelected {
+  @include section;
+  .textBox {
+    padding-left: 10px;
+    font-weight: bolder;
+    font-size: 1.5vh;
+    text-shadow: -1px -1px 0 $layer-0, 1px -1px 0 $layer-0, -1px 1px 0 $layer-0, 1px 1px 0 $layer-0;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  }
+}

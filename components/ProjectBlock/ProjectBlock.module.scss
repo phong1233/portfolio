@@ -1,0 +1,96 @@
+@use '../../styles/variables.scss' as *;
+
+.container {
+  width: 100%;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+}
+
+.descriptionContainer {
+  // background-color: white;
+  flex-grow: 1;
+  margin: 0% 1%;
+  height: 100%;
+  border-radius: 20px;
+  padding: 2%;
+  .title {
+    font-size: 3vw;
+  }
+  .text {
+    font-size: 1vw;
+  }
+  .imageBox {
+    margin-top: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    
+    img {
+      height: 5vw;
+      margin: 2vw;
+    }
+  }
+}
+
+.content {
+  padding: 4vw 10vw 2vw 10vw;
+  width: 100%;
+  height: 40vw;
+  background-color: $divider-3;
+  color: $text-primary;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.topDivider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+
+  svg {
+    position: relative;
+    display: block;
+    width: calc(117% + 1.3px);
+    height: 102px;
+  }
+
+  .fill {
+    fill: $divider-3;
+  }
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .topDivider svg {
+      width: calc(100% + 1.3px);
+      height: 54px;
+  }
+}
+
+.botDivider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  svg {
+    position: relative;
+    display: block;
+    width: calc(117% + 1.3px);
+    height: 102px;
+  }
+  .fill {
+    fill: $divider-3;
+  }
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .botDivider svg {
+      width: calc(100% + 1.3px);
+      height: 54px;
+  }
+}
