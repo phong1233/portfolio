@@ -15,16 +15,16 @@ const Home: NextPage = () => {
 
   const handleWindowSizeChange = () => {
     setWidth(window.innerWidth);
-  }
+  };
   useEffect(() => {
     setWidth(window.innerWidth);
     window.addEventListener('resize', handleWindowSizeChange);
     return () => {
       window.removeEventListener('resize', handleWindowSizeChange);
-    }
+    };
   }, []);
-  
-  let isMobile: boolean = (width <= 768);
+
+  let isMobile: boolean = width <= 768;
 
   return (
     <div className={styles.container}>
@@ -35,16 +35,18 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        {isMobile ||
-          <Navigation refs={[
-            { name: 'About', ref: aboutRef },
-            { name: 'Projects', ref: projectRef },
-            // { name: 'Awards', ref: awardRef },
-            // { name: 'Arcade', ref: arcadeRef },
-            // { name: 'Contact', ref: contactRef },
-          ]}/>
-        }  
-        <TitleBlock/>
+        {isMobile || (
+          <Navigation
+            refs={[
+              { name: 'About', ref: aboutRef },
+              { name: 'Projects', ref: projectRef }
+              // { name: 'Awards', ref: awardRef },
+              // { name: 'Arcade', ref: arcadeRef },
+              // { name: 'Contact', ref: contactRef },
+            ]}
+          />
+        )}
+        <TitleBlock />
         <AboutBlock ref={aboutRef} />
         <ProjectBlock ref={projectRef} />
         {/* <AboutBlock ref={awardRef} />

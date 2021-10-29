@@ -25,7 +25,6 @@
   }
 }
 
-
 .divider1 {
   position: relative;
   top: 0;
@@ -49,7 +48,7 @@
 /** For mobile devices **/
 @media (max-width: 767px) {
   .divider1 svg {
-      width: calc(100% + 1.3px);
-      height: 54px;
+    width: calc(100% + 1.3px);
+    height: 54px;
   }
 }
