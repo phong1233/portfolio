@@ -19,18 +19,12 @@
   border-top: 1px solid #eaeaea;
   justify-content: center;
   align-items: center;
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+  }
 }
 
 .title a:hover,
@@ -43,6 +37,10 @@
   margin: 0;
   line-height: 1.15;
   font-size: 4rem;
+  a {
+    color: #0070f3;
+    text-decoration: none;
+  }
 }
 
 .title,
