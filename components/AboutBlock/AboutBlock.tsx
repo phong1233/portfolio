@@ -28,7 +28,7 @@ const AboutBlock = forwardRef<HTMLDivElement, AboutBlockProps>((props, ref) => {
           <div className={styles.title}>About me</div>
           <div className={styles.text}>
             <p>
-              I&quot;m a 4<sup>th</sup> year Software Engineering student at Concordia University.
+              I&apos;m a 4<sup>th</sup> year Software Engineering student at Concordia University.
             </p>
             <p>
               During my time at Concordia, I learned many key concepts and technologies including

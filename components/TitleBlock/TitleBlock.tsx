@@ -6,7 +6,7 @@ const TitleBlock = () => {
   return (
     <div className={styles.container}>
       <div className={styles.titleContainer}>
-        <div className={styles.title}>Hello, I&quot;m Phong</div>
+        <div className={styles.title}>Hello, I&apos;m Phong</div>
         <div className={styles.subtitle}>Future Software Engineer</div>
       </div>
       <div className={styles.divider1}>

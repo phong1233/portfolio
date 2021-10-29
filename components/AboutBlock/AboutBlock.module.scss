@@ -16,7 +16,7 @@
     font-size: 3vw;
   }
   .text {
-    font-size: 1vw;
+    font-size: 1.7vw;
   }
   .imageBox {
     margin-top: 3vw;
@@ -26,16 +26,16 @@
     height: auto;
 
     img {
-      height: 5vw;
+      height: 8vw;
       margin: 2vw;
     }
   }
 }
 
 .content {
-  padding: 4vw 10vw 2vw 10vw;
+  padding: 3vw;
   width: 100%;
-  height: 40vw;
+  height: auto;
   background-color: $divider-2;
   color: $text-primary;
   display: flex;
@@ -62,14 +62,6 @@
   }
 }
 
-/** For mobile devices **/
-@media (max-width: 767px) {
-  .topDivider svg {
-    width: calc(100% + 1.3px);
-    height: 54px;
-  }
-}
-
 .botDivider {
   position: relative;
   width: 100%;
@@ -91,5 +83,12 @@
   .botDivider svg {
     width: calc(100% + 1.3px);
     height: 54px;
+  }
+  .topDivider svg {
+    width: calc(100% + 1.3px);
+    height: 54px;
+  }
+  .descriptionContainer .text {
+    font-size: 3vw;
   }
 }
