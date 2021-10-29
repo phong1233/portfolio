@@ -34,9 +34,9 @@ const Navigation = ({ refs }: NavigationProps) => {
           onClick={() => executeScroll(r.ref)}
         >
           {isInPosition(r.ref) ? (
-            <Image src="/icons/heart.svg" alt="heart" height={'60%'} />
+            <img src="/icons/heart.svg" alt="heart" height={'60%'} />
           ) : (
-            <Image src="/icons/heart-black.svg" alt="heart" height={'60%'} />
+            <img src="/icons/heart-black.svg" alt="heart" height={'60%'} />
           )}
           <div className={styles.textBox}>{r.name}</div>
         </div>

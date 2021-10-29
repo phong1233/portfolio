@@ -49,14 +49,20 @@ const AboutBlock = forwardRef<HTMLDivElement, AboutBlockProps>((props, ref) => {
           </div>
           <div className={styles.imageBox}>
             <a href="https://www.ssense.com/en-ca" target="_blank" rel="noopener noreferrer">
-              <Image src="/ssense.jpeg" alt="SSENSE logo"></Image>
+              <div className={styles.image}>
+                <img src="/ssense.jpeg" alt="SSENSE logo" />
+              </div>
             </a>
             <a href="https://www.squarefeet.ai/" target="_blank" rel="noopener noreferrer">
-              <Image src="/squarefeet.png" alt="Squarefeet logo"></Image>
+              <div className={styles.image}>
+                <img src="/squarefeet.png" alt="Squarefeet logo" />
+              </div>
             </a>
             <a href="https://www.ludia.com/" target="_blank" rel="noopener noreferrer">
-              <Image src="/ludia.png" alt="Ludia logo"></Image>
-            </a>
+              <div className={styles.image}>
+                <img src="/ludia.png" alt="Ludia logo" />
+              </div>
+              </a>
           </div>
         </div>
       </div>
