@@ -14,7 +14,7 @@ const Navigation = ({ refs }: NavigationProps) => {
   const scrollPosition = useScrollPosition();
 
   const executeScroll = (r: RefObject<HTMLElement>) => {
-    if(r.current) elementScrollIntoView(r.current, { behavior: "smooth", block: "center", inline: "center" });
+    if(r.current) r.current.scrollIntoView({ behavior: "smooth", block: "center", inline: "center" });
   };
 
   const isInPosition = (r: RefObject<HTMLElement>) => {

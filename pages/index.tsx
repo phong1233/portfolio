@@ -2,6 +2,7 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import styles from '../styles/Home.module.scss';
 import { useRef, useState, useEffect } from 'react';
+import * as smoothscroll from 'smoothscroll-polyfill';
 
 import { AboutBlock, Navigation, TitleBlock, ProjectBlock } from '../components';
 
@@ -17,6 +18,7 @@ const Home: NextPage = () => {
     setWidth(window.innerWidth);
   };
   useEffect(() => {
+    smoothscroll.polyfill();
     setWidth(window.innerWidth);
     window.addEventListener('resize', handleWindowSizeChange);
     return () => {
