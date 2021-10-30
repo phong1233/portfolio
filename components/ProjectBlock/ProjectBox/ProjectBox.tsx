@@ -12,7 +12,9 @@ export interface ProjectBoxProps {
 const ProjectBox = ({ name, image, tools, description, github, devpost }: ProjectBoxProps) => {
   return (
     <div className={styles.container}>
-      <img src={image} alt="image of the project" />
+      <div className={styles.thumbnail}>
+        <img src={image} alt="image of the project" />
+      </div>
       <div className={styles.description}>
         <b>{name}</b> | <small>{tools}</small>
         <br />
