@@ -62,7 +62,7 @@ const AboutBlock = forwardRef<HTMLDivElement, AboutBlockProps>((props, ref) => {
               <div className={styles.image}>
                 <img src="/ludia.png" alt="Ludia logo" />
               </div>
-              </a>
+            </a>
           </div>
         </div>
       </div>
