@@ -1,5 +1,4 @@
 import { RefObject } from 'react';
-import { elementScrollIntoView } from "seamless-scroll-polyfill";
 import styles from './Navigation.module.scss';
 import useScrollPosition from './useScrollPosition';
 
