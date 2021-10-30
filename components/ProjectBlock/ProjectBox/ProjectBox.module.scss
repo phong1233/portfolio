@@ -1,0 +1,81 @@
+@use '../../../styles/variables.scss' as *;
+
+.container {
+  position: relative;
+  flex-grow: 1;
+  width: 25vw;
+  height: 25vw;
+  background-color: white;
+  margin: 1vw;
+  border-radius: 20px;
+  
+  img {
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    height: auto;
+  }
+
+  .description {
+    padding: 20px;
+    font-size: 1vw;
+    
+    p {
+      font-size: 0.7vw;
+    }
+  }
+
+  .iconBox {
+    width: 100%;
+    position: absolute;
+    bottom: 6px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-right: 20px;
+    height: 40px;
+    opacity: 0.7;
+    img {
+      &:hover {
+        cursor: pointer;
+      }
+      margin: 0px 5px;
+      height: 80%;
+      width: auto;
+    }
+  }
+}
+
+@media (max-width: 810px) {
+  .container {
+    margin: 1vw;
+    height: auto;
+    .description {
+      padding: 8px;
+      font-size: 1.7vw;      
+      p {
+        font-size: 1.5vw;
+      }
+    }
+
+    .iconBox {
+      height: 30px;
+    }
+  }
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .container {
+    min-width: 90vw;
+    min-height: 90vw;
+    margin: 2vw;
+  
+    .description {
+      padding: 8px;
+      font-size: 4vw;
+      p {
+        font-size: 3.5vw;
+      }
+    }
+  }
+}

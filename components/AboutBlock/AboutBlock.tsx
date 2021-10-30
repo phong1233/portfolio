@@ -39,7 +39,7 @@ const AboutBlock = forwardRef<HTMLDivElement, AboutBlockProps>((props, ref) => {
               applications.
             </p>
             <p>
-              During my internship at SSENSE, Squarefeet.ai and Ludia, I participated in the agile
+              During my internships at SSENSE, Squarefeet.ai and Ludia, I participated in the agile
               development of applications that are widely used.
             </p>
             <p>

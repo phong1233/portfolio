@@ -8,15 +8,14 @@
 
 .descriptionContainer {
   flex-grow: 1;
-  margin: 0% 1%;
   height: 100%;
   border-radius: 20px;
-  padding: 2%;
+  padding: 2vw 5vw;
   .title {
     font-size: 3vw;
   }
   .text {
-    font-size: 1vw;
+    font-size: $font-medium;
   }
   .imageBox {
     margin-top: 3vw;
@@ -26,21 +25,30 @@
     height: auto;
 
     img {
-      height: 5vw;
+      height: 8vw;
       margin: 2vw;
     }
   }
 }
 
 .content {
-  padding: 4vw 10vw 2vw 10vw;
+  padding: 3.5vw;
   width: 100%;
-  height: 40vw;
+  height: auto;
   background-color: $divider-3;
   color: $text-primary;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  .title {
+    font-size: 3.5vw;
+    width: 100%;
+    margin: 10px;
+  }
+  .imageBox {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
 }
 
 .topDivider {
@@ -53,20 +61,13 @@
   svg {
     position: relative;
     display: block;
-    width: calc(117% + 1.3px);
-    height: 102px;
+    width: calc(100% + 1.3px);
+    height: 150px;
+    opacity: 0.89;
   }
 
   .fill {
     fill: $divider-3;
-  }
-}
-
-/** For mobile devices **/
-@media (max-width: 767px) {
-  .topDivider svg {
-    width: calc(100% + 1.3px);
-    height: 54px;
   }
 }
 
@@ -78,8 +79,9 @@
   svg {
     position: relative;
     display: block;
-    width: calc(117% + 1.3px);
-    height: 102px;
+    width: calc(100% + 1.3px);
+    height: 150px;
+    opacity: 0.89;
   }
   .fill {
     fill: $divider-3;
@@ -89,7 +91,23 @@
 /** For mobile devices **/
 @media (max-width: 767px) {
   .botDivider svg {
-    width: calc(100% + 1.3px);
-    height: 54px;
+    width: calc(117% + 1.3px);
+    height: 90px;
+  }
+  .topDivider svg {
+    width: calc(117% + 1.3px);
+    height: 90px;
+  }
+  .descriptionContainer {
+    padding: 2vw;
+  }
+  .descriptionContainer .text {
+    font-size: 3vw;
+  }
+  .content {
+    .imageBox {
+      flex-wrap: nowrap;
+      overflow: auto;
+    }
   }
 }
