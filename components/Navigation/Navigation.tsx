@@ -1,5 +1,5 @@
 import { RefObject } from 'react';
-import Image from 'next/image';
+import { elementScrollIntoView } from "seamless-scroll-polyfill";
 import styles from './Navigation.module.scss';
 import useScrollPosition from './useScrollPosition';
 
@@ -14,7 +14,7 @@ const Navigation = ({ refs }: NavigationProps) => {
   const scrollPosition = useScrollPosition();
 
   const executeScroll = (r: RefObject<HTMLElement>) => {
-    r.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    if(r.current) elementScrollIntoView(r.current, { behavior: "smooth", block: "center", inline: "center" });
   };
 
   const isInPosition = (r: RefObject<HTMLElement>) => {
@@ -22,7 +22,7 @@ const Navigation = ({ refs }: NavigationProps) => {
     if (!window) return false;
     let top = window?.top == null ? 0 : window?.top;
     let bottom = window?.bottom == null ? 0 : window?.bottom;
-    return top >= -(bottom - top) && top <= 100;
+    return top >= -(bottom - top) && top <= Number(scrollPosition)/2;
   };
 
   return (

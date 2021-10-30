@@ -3,16 +3,6 @@
 .container {
   padding: 0;
   font-family: 'Courier New', Courier, monospace;
-}
-
-.background {
-  z-index: -1;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-size: 100%;
   background-color: $layer-0;
   background-image: url('/background.gif');
   background-repeat: no-repeat;

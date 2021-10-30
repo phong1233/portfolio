@@ -33,7 +33,6 @@ const Home: NextPage = () => {
         <meta name="description" content="Phong Le portfolio website" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className={styles.background}></div>
       <main className={styles.main}>
         {isMobile || (
           <Navigation
