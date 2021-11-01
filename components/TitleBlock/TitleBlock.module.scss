@@ -6,7 +6,7 @@
 
 .titleContainer {
   width: 100%;
-  height: 20vw;
+  height: 10vw;
   background-color: $divider-1;
   color: $text-primary;
   display: flex;
@@ -49,6 +49,6 @@
 @media (max-width: 767px) {
   .divider1 svg {
     width: calc(100% + 1.3px);
-    height: 54px;
+    height: 30px;
   }
 }
