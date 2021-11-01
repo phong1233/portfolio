@@ -10,12 +10,13 @@
   flex-grow: 1;
   height: 100%;
   border-radius: 20px;
-  padding: 2vw 5vw;
+  padding: 2vw 20vw;
   .title {
     font-size: 3vw;
   }
   .text {
     font-size: 1.7vw;
+    text-align: justify;
   }
   .imageBox {
     margin-top: 3vw;
